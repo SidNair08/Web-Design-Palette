@@ -1,0 +1,87 @@
+body{
+    background-color: whitesmoke;
+}
+
+header {
+    margin-top: 30px;
+}
+header h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: "Staatliches";
+    font-size: 40px;
+    display: inline;
+    font-weight: 900;
+    color: white;   
+
+}
+
+header h1:hover {
+    background-color: #e6a100;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#color {
+    height: 250px;
+    width: auto;
+    border: 5px solid orange;
+    border-radius: 15px;
+    
+}
+
+main h2 {
+    background: #e6a100;
+    text-align: center;
+    font-family: "Bungee";
+    font-size: 25px;
+    font-weight:800;
+    border-radius: 15px;
+
+}
+
+#color {
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+#c1 {
+height: 100px;
+width: 250px;
+border: 5px silver solid;
+display: block;
+border-radius: 15px;
+background-color: #C0C0C0;
+transition: background-color 0.3s ease-in-out;
+transform: translate(35%, -50%);
+}
+
+#c1,#c2,#c3  h3 {
+    color:white;
+    font-family: monospace;
+    text-align: center;
+    transform: translate(-1%, 30%);
+    font-size: 18px;
+}
+
+#c1:hover {
+    cursor: pointer;
+    background-color: #C0C0C0;
+}
+#c2 {
+    z-index: -1;
+height: 100px;
+width: 250px;
+border: 5px silver solid;
+display: block;
+border-radius: 15px;
+background-color: #05072e;
+transition: background-color 0.3s ease-in-out;
+transform: translate(150%, -50%);
+}
+#c2:hover {
+    cursor: pointer;
+    background-color: #05072e;
+}

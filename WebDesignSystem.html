@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Website Design System
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link href="C:\Users\aboya\OneDrive\Documents\GitHub\Web-Design-Palette\CSS2.css" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <center><h1>WEB DESIGN SYSTEM</h1></center>
+    </header>
+    <main>
+        <h2>Colors</h2>
+        <div id="color">
+            <div id="c1" class="color">
+                <h3>Silver<br>#C0C0C0</h3>
+
+
+            </div>
+            <div  id="c2" class="color">
+                <h3>Navy Blue<br>#05072e</h3>
+
+            </div>
+            <div id="c3" class="color">
+                <h3>Orange<br>#e6a100</h3>
+
+            </div>
+        </div>
+    </main>
+    <script>
+        const hoverDiv = document.querySelector('#c1');
+        const backgroundDiv = document.querySelector('#color');
+
+        hoverDiv.addEventListener('mouseenter', () => {
+            const computedStyle = getComputedStyle(hoverDiv); 
+            backgroundDiv.style.backgroundColor = bgColor;
+        });
+
+        hoverDiv.addEventListener('mouseleave', () => {
+            backgroundDiv.style.backgroundColor = ''; // Reset to default
+        });
+    </script>
+    </body>
+
+</html>
