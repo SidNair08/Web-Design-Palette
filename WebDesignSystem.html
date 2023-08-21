@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" href="D:\Coding\CodeCademy\Media\WebDev.png" type="image/x-icon">
         <title>
             Website Design System
         </title>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
         <link href="C:\Users\aboya\OneDrive\Documents\GitHub\Web-Design-Palette\CSS2.css" rel="stylesheet">
@@ -28,19 +30,80 @@
                 <h3>Orange<br>#e6a100</h3>
 
             </div>
+            <div id="c4" class="color">
+                <h3>YT Red<br>#ff0000</h3>
+            </div>
+            <div id="c5" class="color">
+                <h3>Kick Green<br>#53fc18</h3>
+            </div>
+        </div>
+        <h2>Fonts</h2>
+        <div id="fonts">
+            <h4 id="stoot">Staatliches:</h4> <input id="staat">
+            <h4 id="bung">Bungee:</h4> <input id="bong">
+            <h4 id="mino">Chivo Mono:</h4> <input id="mono">
         </div>
     </main>
     <script>
-        const hoverDiv = document.querySelector('#c1');
+        const hoverDiv = document.querySelector('#c2');
         const backgroundDiv = document.querySelector('#color');
 
         hoverDiv.addEventListener('mouseenter', () => {
-            const computedStyle = getComputedStyle(hoverDiv); 
+            const computedStyle = getComputedStyle(hoverDiv);
+            const bgColor = computedStyle.backgroundColor;
             backgroundDiv.style.backgroundColor = bgColor;
         });
 
         hoverDiv.addEventListener('mouseleave', () => {
             backgroundDiv.style.backgroundColor = ''; // Reset to default
+        });
+        const hoverDiv2 = document.querySelector('#c1');
+        const backgroundDiv2 = document.querySelector('#color');
+
+        hoverDiv2.addEventListener('mouseenter', () => {
+            const computedStyle = getComputedStyle(hoverDiv2);
+            const bgColor = computedStyle.backgroundColor;
+            backgroundDiv2.style.backgroundColor = bgColor;
+        });
+
+        hoverDiv2.addEventListener('mouseleave', () => {
+            backgroundDiv2.style.backgroundColor = ''; // Reset to default
+        });
+        const hoverDiv3 = document.querySelector('#c3');
+        const backgroundDiv3 = document.querySelector('#color');
+
+        hoverDiv3.addEventListener('mouseenter', () => {
+            const computedStyle = getComputedStyle(hoverDiv3);
+            const bgColor = computedStyle.backgroundColor;
+            backgroundDiv3.style.backgroundColor = bgColor;
+        });
+
+        hoverDiv3.addEventListener('mouseleave', () => {
+            backgroundDiv3.style.backgroundColor = ''; // Reset to default
+        });
+        const hoverDiv4 = document.querySelector('#c4');
+        const backgroundDiv4 = document.querySelector('#color');
+
+        hoverDiv4.addEventListener('mouseenter', () => {
+            const computedStyle = getComputedStyle(hoverDiv4);
+            const bgColor = computedStyle.backgroundColor;
+            backgroundDiv4.style.backgroundColor = bgColor;
+        });
+
+        hoverDiv4.addEventListener('mouseleave', () => {
+            backgroundDiv4.style.backgroundColor = ''; // Reset to default
+        });
+        const hoverDiv5 = document.querySelector('#c5');
+        const backgroundDiv5 = document.querySelector('#color');
+
+        hoverDiv5.addEventListener('mouseenter', () => {
+            const computedStyle = getComputedStyle(hoverDiv5);
+            const bgColor = computedStyle.backgroundColor;
+            backgroundDiv5.style.backgroundColor = bgColor;
+        });
+
+        hoverDiv5.addEventListener('mouseleave', () => {
+            backgroundDiv5.style.backgroundColor = ''; // Reset to default
         });
     </script>
     </body>
